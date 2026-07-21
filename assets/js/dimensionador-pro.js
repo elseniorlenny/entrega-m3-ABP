@@ -2,11 +2,11 @@
 // DIMENSIONADOR PRO - Optimizador de Cortes
 // Aplica: Ejercicio 1 (let/const, if/else, switch, math)
 //         Ejercicio 2 (arrays, for/while, filter, map)
-//         Ejercicio 3 (funciones, params, retorno, composicion)
-//         Ejercicio 4 (objetos, metodos, forEach, validaciones)
+//         Ejercicio 3 (funciones, params, retorno, composición)
+//         Ejercicio 4 (objetos, métodos, forEach, validaciones)
 // =====================================================
 
-/* Ejercicio 4: INVENTARIO con objetos que tienen metodos */
+/* Ejercicio 4: INVENTARIO con objetos que tienen métodos */
 const INVENTARIO = {
     melamina: {
         nombre: "Melamina", alto: 244, ancho: 183,
@@ -83,7 +83,7 @@ function clasificarResultado(porcentaje) {
     }
 }
 
-/* Ejercicio 2: Funcion para valores unicos (filter) */
+/* Ejercicio 2: Función para valores únicos (filter) */
 function unicos(arr) {
     const vistos = new Set();
     return arr.filter(function(v) { return !vistos.has(v) && vistos.add(v); });
@@ -781,7 +781,7 @@ function reiniciar() {
 renderMateriales();
 mostrarPaso(1);
 
-/* Decisiones de diseno:
+/* Decisiones de diseño:
    - Cree este archivo como un "ejercicio 5" porque el 4 ya estaba muy cargado de cosas
    - Use IA para que tomara todos los ejercicios anteriores y armara la base de la app visual
    - Eleji Bootstrap 5.3 para la interfaz responsive y SweetAlert2 porque ya se habia mencionado en clases

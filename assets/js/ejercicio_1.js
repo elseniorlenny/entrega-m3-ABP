@@ -11,17 +11,17 @@ let altoMaterial = Number(altoPlaca);
 let anchoMaterial = Number(anchoPlaca);
 let cantidadMaterial = Number(cantidadPlacas);
 
-/* Calcular areas de las placas */
+/* Calcular áreas de las placas */
 let areaCadaPlaca = altoMaterial * anchoMaterial;
 let areaTotalPlacas = areaCadaPlaca * cantidadMaterial;
 
 /* Mostrar resultados en consola y en pantalla */
 console.log("Dimensiones de la placa:", altoMaterial + " x " + anchoMaterial + " cm");
 console.log("Cantidad de placas:", cantidadMaterial);
-console.log("Area de cada placa:", areaCadaPlaca + " cm2");
-console.log("Area total de placas:", areaTotalPlacas + " cm2");
+console.log("Área de cada placa:", areaCadaPlaca + " cm2");
+console.log("Área total de placas:", areaTotalPlacas + " cm2");
 
-alert("Placa: " + altoMaterial + " x " + anchoMaterial + " cm\nArea total: " + areaTotalPlacas + " cm2");
+alert("Placa: " + altoMaterial + " x " + anchoMaterial + " cm\nÁrea total: " + areaTotalPlacas + " cm2");
 
 /* Pedir dimensiones de la pieza a cortar */
 let altoCorte = prompt("Largo de pieza en cm");
@@ -30,18 +30,18 @@ let anchoCorte = prompt("Ancho de pieza en cm");
 let alto = Number(altoCorte);
 let ancho = Number(anchoCorte);
 
-/* Calcular area de la pieza */
+/* Calcular área de la pieza */
 let areaPieza = alto * ancho;
 console.log("Dimensiones de la pieza:", alto + " x " + ancho + " cm");
-console.log("Area de la pieza:", areaPieza + " cm2");
+console.log("Área de la pieza:", areaPieza + " cm2");
 
-/* Calcular cuantas piezas caben en el material total */
+/* Calcular cuántas piezas caben en el material total */
 let piezasQueCaben = parseInt(areaTotalPlacas / areaPieza);
 console.log("Piezas que caben:", piezasQueCaben);
 
-/* Calcular area utilizada y material sobrante */
+/* Calcular área utilizada y material sobrante */
 let areaUtilizada = piezasQueCaben * areaPieza;
-console.log("Area utilizada:", areaUtilizada + " cm2");
+console.log("Área utilizada:", areaUtilizada + " cm2");
 
 let materialSobrante = areaTotalPlacas - areaUtilizada;
 console.log("Material sobrante:", materialSobrante + " cm2");
@@ -52,12 +52,12 @@ let porcentajeSobrante = (materialSobrante / areaTotalPlacas) * 100;
 console.log("Porcentaje utilizado:", porcentajeUtilizado.toFixed(2) + "%");
 console.log("Porcentaje sobrante:", porcentajeSobrante.toFixed(2) + "%");
 
-/* Operaciones de suma y resta de areas */
+/* Operaciones de suma y resta de áreas */
 let sumaAreas = areaCadaPlaca + areaPieza;
-console.log("Suma de areas (placa + pieza):", sumaAreas + " cm2");
+console.log("Suma de áreas (placa + pieza):", sumaAreas + " cm2");
 
 let restaAreas = areaCadaPlaca - areaPieza;
-console.log("Resta de areas (placa - pieza):", restaAreas + " cm2");
+console.log("Resta de áreas (placa - pieza):", restaAreas + " cm2");
 
 /* Evaluar si caben las piezas con if/else */
 if (piezasQueCaben > 0) {
@@ -73,20 +73,20 @@ if (piezasQueCaben > 0) {
 /* Clasificar la cantidad de piezas con switch */
 switch (true) {
     case (piezasQueCaben >= 10):
-        console.log("Clasificacion:", "Muchas piezas: " + piezasQueCaben);
+        console.log("Clasificación:", "Muchas piezas: " + piezasQueCaben);
         break;
     case (piezasQueCaben >= 5):
-        console.log("Clasificacion:", "Pocas piezas: " + piezasQueCaben);
+        console.log("Clasificación:", "Pocas piezas: " + piezasQueCaben);
         break;
     default:
-        console.log("Clasificacion:", "Muy pocas piezas: " + piezasQueCaben);
+        console.log("Clasificación:", "Muy pocas piezas: " + piezasQueCaben);
 }
 
 
 
-/* Decisiones de diseno:
-   - Use un dominio que conozco (placas de melamina) para enfocarme en JS y no complicarme con cosas nuevas
-   - Segui la estructura que dio en clases con archivos separados por ejercicio
+/* Decisiones de diseño:
+   - Usé un dominio que conozco (placas de melamina) para enfocarme en JS y no complicarme con cosas nuevas
+   - Seguí la estructura que dio en clases con archivos separados por ejercicio
    - Use Number() para convertir los prompt() a numero 
    - Use if/else para validar si caben piezas y switch para clasificar cantidad
    - Use console.log() para mostrar resultados en consola y alert() para mostrar resultados en pantalla

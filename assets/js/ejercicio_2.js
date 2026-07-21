@@ -22,7 +22,7 @@ while (j < nombres.length) {
 }
 console.log("");
 
-/* Funcion que filtra elementos segun una condicion */
+/* Función que filtra elementos según una condición */
 function filtrarPorAncho(listaAnchos, listaNombres, anchoBuscado) {
     let resultado = [];
     for (let i = 0; i < listaAnchos.length; i++) {
@@ -33,23 +33,23 @@ function filtrarPorAncho(listaAnchos, listaNombres, anchoBuscado) {
     return resultado;
 }
 
-/* Usar la funcion para filtrar materiales con ancho 122 cm */
+/* Usar la función para filtrar materiales con ancho 122 cm */
 let materiales122 = filtrarPorAncho(anchos, nombres, 122);
-console.log("Materiales con ancho 122 cm (usando funcion):");
+console.log("Materiales con ancho 122 cm (usando función):");
 for (let i = 0; i < materiales122.length; i++) {
     console.log("- " + materiales122[i]);
 }
 
-/* Usar la funcion para filtrar materiales con ancho 152 cm */
+/* Usar la función para filtrar materiales con ancho 152 cm */
 let materiales152 = filtrarPorAncho(anchos, nombres, 152);
 console.log("Materiales con ancho 152 cm (usando funcion):");
 for (let i = 0; i < materiales152.length; i++) {
     console.log("- " + materiales152[i]);
 }
 
-/* Decisiones de diseno:
-   - Use arrays paralelos (nombres, altos, anchos) como pedia el ejercicio
-   - Recorri con for y con while para mostrar ambos metodos
-   - originalmente habia dejado como comentarios el for y while, despues camvie la letra de la variable para que no se repita y los deje activos
-   - La funcion filtrarPorAncho() usa un for clasico con if para filtrar
+/* Decisiones de diseño:
+   - Usé arrays paralelos (nombres, altos, anchos) como pedía el ejercicio
+   - Recorrí con for y con while para mostrar ambos métodos
+   - Originalmente había dejado como comentarios el for y while, después cambié la letra de la variable para que no se repita y los dejé activos
+   - La funci\u00f3n filtrarPorAncho() usa un for cl\u00e1sico con if para filtrar
    - Tome los mismos 5 materiales del ejercicio-1.html para mantener consistencia */

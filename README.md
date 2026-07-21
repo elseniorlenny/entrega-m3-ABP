@@ -1,6 +1,6 @@
 # Dimensionador de Placas - Proyecto M3
 
-Proyecto de JavaScript para el modulo M3, orientado al calculo y dimensionado de placas de melamina, MDF, terciado, durolac y OSB para construccion y ebanisteria.
+Proyecto de JavaScript para el módulo M3, orientado al cálculo y dimensionado de placas de melamina, MDF, terciado, durolac y OSB para construccion y ebanisteria.
 
 ---
 
@@ -8,7 +8,7 @@ Proyecto de JavaScript para el modulo M3, orientado al calculo y dimensionado de
 
 Los ejercicios son archivos independientes que se ejecutan en la consola del navegador. Cada uno cubre un tema diferente de JavaScript.
 
-### Como ejecutar
+### Cómo ejecutar
 
 1. Abrir el archivo `ejercicio_X.html` en el navegador
 2. Abrir la consola del navegador (F12 → pestaña Console)
@@ -21,21 +21,21 @@ Los ejercicios son archivos independientes que se ejecutan en la consola del nav
 
 **Archivo:** `assets/js/ejercicio_1.js`
 
-**Que hace:** Pide al usuario las dimensiones de una placa y de una pieza a cortar. Calcula areas, porcentaje de material utilizado y sobrante, y clasifica la cantidad de piezas.
+**Qué hace:** Pide al usuario las dimensiones de una placa y de una pieza a cortar. Calcula áreas, porcentaje de material utilizado y sobrante, y clasifica la cantidad de piezas.
 
-**Que incluye:**
+**Qué incluye:**
 - Uso de `prompt()` para pedir datos (alto, ancho, cantidad de placas y piezas)
-- Conversion de texto a numero con `Number()`
-- Operaciones matematicas: suma, resta, multiplicacion, division
+- Conversión de texto a número con `Number()`
+- Operaciones matemáticas: suma, resta, multiplicación, división
 - Uso de `alert()` para mostrar resultados
 - Condicional `if/else` para validar si caben piezas
 - `switch` para clasificar la cantidad de piezas (muchas/pocas/muy pocas)
-- Calculo de porcentajes de uso y material sobrante
+- Cálculo de porcentajes de uso y material sobrante
 
 **Flujo:**
 1. Ingresa dimensiones de la placa (alto, ancho, cantidad)
 2. Ingresa dimensiones de la pieza a cortar (alto, ancho)
-3. Se calculan areas, piezas que caben y porcentajes
+3. Se calculan áreas, piezas que caben y porcentajes
 4. Se muestra el resultado en consola y en pantalla
 
 ---
@@ -44,13 +44,13 @@ Los ejercicios son archivos independientes que se ejecutan en la consola del nav
 
 **Archivo:** `assets/js/ejercicio_2.js`
 
-**Que hace:** Almacena los mismos materiales del ejercicio 1 en arreglos. Los recorre con `for` y `while`. Implementa una funcion que filtra materiales por ancho de placa.
+**Qué hace:** Almacena los mismos materiales del ejercicio 1 en arreglos. Los recorre con `for` y `while`. Implementa una función que filtra materiales por ancho de placa.
 
-**Que incluye:**
+**Qué incluye:**
 - Arreglos de nombres, altos y anchos
 - Recorrido con `for` usando indices
 - Recorrido con `while` usando variable incrementada
-- Funcion `filtrarPorAncho()` que retorna un arreglo con los materiales que coinciden
+- Función `filtrarPorAncho()` que retorna un arreglo con los materiales que coinciden
 - Los 5 materiales: Melamina (183cm), Terciado (122cm), MDF (152cm), Durolac (152cm), OSB (122cm)
 
 **Flujo:**
@@ -66,20 +66,20 @@ Los ejercicios son archivos independientes que se ejecutan en la consola del nav
 
 **Archivo:** `assets/js/ejercicio_3.js`
 
-**Que hace:** Reimplementa las operaciones del ejercicio 1 como funciones separadas. Cada funcion hace una tarea y retorna un resultado. Se piden los datos al usuario y se calcula todo usando las funciones.
+**Qué hace:** Reimplementa las operaciones del ejercicio 1 como funciones separadas. Cada función hace una tarea y retorna un resultado. Se piden los datos al usuario y se calcula todo usando las funciones.
 
-**Que incluye:**
+**Qué incluye:**
 - `pedirNumero(mensaje)` - pide un dato y lo retorna como Number
 - `calcularArea(largo, ancho)` - retorna largo * ancho
-- `calcularAreaTotal(areaPlaca, cantidad)` - retorna area por cantidad
+- `calcularAreaTotal(areaPlaca, cantidad)` - retorna área por cantidad
 - `calcularPiezasQueCaben(areaTotal, areaPieza)` - retorna division entera
 - `calcularPorcentaje(parte, total)` - retorna porcentaje
 
 **Flujo:**
 1. Se piden datos al usuario (dimensiones de placa y pieza)
-2. Se calculan areas usando `calcularArea()`
+2. Se calculan áreas usando `calcularArea()`
 3. Se calcula el area total con `calcularAreaTotal()`
-4. Se calculan piezas que caben, area utilizada y sobrante
+4. Se calculan piezas que caben, área utilizada y sobrante
 5. Se calculan porcentajes con `calcularPorcentaje()`
 6. Se muestra el resultado en consola y en pantalla
 
@@ -89,18 +89,18 @@ Los ejercicios son archivos independientes que se ejecutan en la consola del nav
 
 **Archivo:** `assets/js/ejercicio_4.js`
 
-**Que hace:** Crea un inventario de materiales como objetos con propiedades y metodos. Implementa un programa completo con 6 pasos: seleccionar material, cantidad de placas, nombre de pieza, dimensiones y calculo final.
+**Qué hace:** Crea un inventario de materiales como objetos con propiedades y métodos. Implementa un programa completo con 6 pasos: seleccionar material, cantidad de placas, nombre de pieza, dimensiones y calculo final.
 
-**Que incluye:**
+**Qué incluye:**
 - Arreglo `materiales` con objetos que tienen:
   - Propiedades: nombre, alto, ancho, espesor, stock
-  - Metodos: `calcularArea()`, `descripcion()`
+  - Métodos: `calcularArea()`, `descripcion()`
 - `forEach()` para recorrer el inventario
-- `while(true)` anidados para validacion en cada paso
+- `while(true)` anidados para validación en cada paso
 - `pedirDato()` con manejo de cancelar (pregunta "Desea salir del programa?")
 - `buscarMaterial()` que busca por nombre o numero
 - Funciones reutilizadas del ejercicio 3
-- Validacion de stock (no permite placas mayores al stock disponible)
+- Validación de stock (no permite placas mayores al stock disponible)
 
 **Flujo:**
 1. Seleccionar material (por numero o nombre)
@@ -125,7 +125,7 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 
 👉 **[Abrir Dimensionador Pro en línea](https://elseniorlenny.github.io/entrega-m3-ABP/)**
 
-### Como ejecutar localmente
+### Cómo ejecutar localmente
 
 1. Clonar o descargar el repositorio
 2. Abrir `index.html` en el navegador
@@ -153,21 +153,21 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
   - Cantidad
   - Rotar (Si/No) - intercambia alto y ancho para mejor ajuste
 - Las piezas aparecen en una tabla debajo del formulario
-- Se pueden editar (clic en lapiz) o eliminar (clic en basura)
+- Se pueden editar (clic en lápiz) o eliminar (clic en basura)
 - Hacer clic en "Optimizar Corte" cuando termine
 
 **Paso 4 - Optimizar:**
 - Se ejecuta el algoritmo FFD (First-Fit Decreasing)
 - Se dibuja el diagrama de corte en Canvas
 - Navegar entre placas con los botones anterior/siguiente
-- Se muestra resumen: placas necesarias, eficiencia, clasificacion
+- Se muestra resumen: placas necesarias, eficiencia, clasificación
 - Se puede exportar el detalle en CSV o imagen PNG
 - Hacer clic en "Continuar a Pago"
 
 **Paso 5 - Pago:**
 - Resumen del material seleccionado
-- Desglose de costos en CLP (precio placa, corte, diseno)
-- Validacion de stock (no permite confirmar si no hay stock suficiente)
+- Desglose de costos en CLP (precio placa, corte, dise\u00f1o)
+- Validación de stock (no permite confirmar si no hay stock suficiente)
 - Hacer clic en "Confirmar Pedido"
 - Aparece un mensaje de agradecimiento
 - Stock se reduce automaticamente
@@ -182,7 +182,7 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 | Durolac | 244 | 152 | Arauco |
 | OSB | 244 | 122 | LP, Multiplac |
 
-### Tecnologias
+### Tecnologías
 
 - JavaScript vanilla (sin frameworks)
 - Bootstrap 5.3
@@ -192,8 +192,8 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 
 ### Funcionalidades
 
-- Rotacion de piezas (intercambia alto/ancho)
-- Navegacion entre placas con controles prev/next
+- Rotación de piezas (intercambia alto/ancho)
+- Navegación entre placas con controles prev/next
 - Exportar detalle de cortes en CSV
 - Exportar diagrama como imagen PNG
 - Persistencia de datos (guardar/cargar proyecto en JSON)
@@ -208,8 +208,8 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 - El Dimensionador Pro es la version web con interfaz visual
 - Todos los ejercicios comparten los mismos 5 materiales y sus dimensiones
 - El proyecto es un prototipo en desarrollo
-- En los ejercicios 1-4 la IA se uso para corregir errores y ajustar detalles menores
-- En el Dimensionador Pro la IA armo la base integrando todo lo de los ejercicios, despues se agrego trabajo visual y se implementaron cambios en el funcionamiento hasta llegar a la version actual
+- En los ejercicios 1-4 la IA se usó para corregir errores y ajustar detalles menores
+- En el Dimensionador Pro la IA armó la base integrando todo lo de los ejercicios, después se agregó trabajo visual y se implementaron cambios en el funcionamiento hasta llegar a la versión actual
 
 
 **Autoria:** Fabian Adolfo Ortiz Peña

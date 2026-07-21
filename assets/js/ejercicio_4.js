@@ -1,6 +1,6 @@
 
 
-/* Inventario de materiales como objetos con propiedades y metodos */
+/* Inventario de materiales como objetos con propiedades y métodos */
 
 let materiales = [
     {
@@ -34,7 +34,7 @@ let materiales = [
 console.log("=== EJERCICIO 4: OBJETOS ===");
 console.log("Materiales disponibles (usando forEach):");
 materiales.forEach(function(material) {
-    console.log("- " + material.descripcion() + " | Espesor: " + material.espesor + "mm | Stock: " + material.stock + " | Area: " + material.calcularArea() + " cm2");
+        console.log("- " + material.descripcion() + " | Espesor: " + material.espesor + "mm | Stock: " + material.stock + " | Área: " + material.calcularArea() + " cm2");
 });
 
 /* Funciones reutilizadas */
@@ -50,7 +50,7 @@ function calcularPorcentaje(parte, total) {
     return (parte / total) * 100;
 }
 
-/* Funcion que pide datos al usuario y maneja el cancelar */
+/* Función que pide datos al usuario y maneja el cancelar */
 function pedirDato(mensaje) {
     let respuesta = prompt(mensaje);
     if (respuesta === null) {
@@ -94,7 +94,7 @@ function main() {
                 lista = lista + (i + 1) + ". " + materiales[i].nombre + "\n";
             }
 
-            let respuesta = pedirDato("Que material necesita?\n\n" + lista);
+            let respuesta = pedirDato("¿Qué material necesita?\n\n" + lista);
 
             if (respuesta === null) return;
             if (respuesta === undefined) continue;
@@ -105,17 +105,17 @@ function main() {
                 break;
             }
 
-            alert("Material no valido. Intente de nuevo.");
+            alert("Material no válido. Intente de nuevo.");
         }
 
-        /* PASO 2: Cuantas placas se quieren */
+        /* PASO 2: Cuántas placas se quieren */
         let cantidadPlacas = 0;
         while (true) {
             let respuesta = pedirDato(
                 material.nombre + "\n" +
                 "Espesor: " + material.espesor + "mm\n" +
                 "Stock: " + material.stock + " placas\n\n" +
-                "Cuantas placas desea usar?:"
+                "¿Cuántas placas desea usar?:"
             );
 
             if (respuesta === null) return;
@@ -127,7 +127,7 @@ function main() {
                 break;
             }
 
-            alert("Cantidad invalida. Intente de nuevo.");
+            alert("Cantidad inválida. Intente de nuevo.");
         }
 
         /* PASO 3: Nombre de la pieza a dimensionar */
@@ -143,7 +143,7 @@ function main() {
                 break;
             }
 
-            alert("El nombre no puede estar vacio.");
+            alert("El nombre no puede estar vacío.");
         }
 
         /* PASO 4: Largo de la pieza */
@@ -197,7 +197,7 @@ function main() {
         let porcentajeSobrante = 100 - porcentajeUsado;
         let caben = areaNecesaria <= areaTotal;
 
-        console.log("--- CALCULO ---");
+        console.log("--- CÁLCULO ---");
         console.log("Pieza:", nombrePieza);
         console.log("Dimensiones de la pieza:", largoPieza + "x" + anchoPieza + " cm");
         console.log("Cantidad de piezas:", cantidadPiezas);
@@ -213,10 +213,10 @@ function main() {
             alert(
                 "Las piezas SI caben\n\n" +
                 "Material: " + material.nombre + "\n" +
-                "Dimensiones placa: " + material.alto + "x" + material.ancho + "cm\n" +
+                "Dimensiones de placa: " + material.alto + "x" + material.ancho + "cm\n" +
                 "Placas necesarias: " + cantidadPlacas + "\n\n" +
                 "Pieza: " + nombrePieza + "\n" +
-                "Dimensiones pieza: " + largoPieza + "x" + anchoPieza + "cm\n" +
+                "Dimensiones de pieza: " + largoPieza + "x" + anchoPieza + "cm\n" +
                 "Cantidad de piezas: " + cantidadPiezas + "\n\n" +
                 "Porcentaje utilizado: " + porcentajeUsado.toFixed(2) + "%\n" +
                 "Porcentaje sin usar: " + porcentajeSobrante.toFixed(2) + "%"
@@ -232,12 +232,12 @@ function main() {
         alert(
             "Las piezas NO caben\n\n" +
             "Material: " + material.nombre + "\n" +
-            "Dimensiones placa: " + material.alto + "x" + material.ancho + "cm\n" +
+            "Dimensiones de placa: " + material.alto + "x" + material.ancho + "cm\n" +
             "Stock disponible: " + material.stock + " placas\n" +
             "Placas que necesita: " + placasNecesarias + " placas"
         );
 
-        let volverACalcular = confirm("Desea realizar otro calculo con nuevas medidas o placas?");
+        let volverACalcular = confirm("¿Desea realizar otro cálculo con nuevas medidas o placas?");
         if (volverACalcular) {
             continue;
         }
@@ -249,15 +249,15 @@ function main() {
 
 main();
 
-/* Decisiones de diseno:
-   - Use objetos con metodos (calcularArea, descripcion) para representar materiales
-   - Continue con los materiales de ejercicios anteriores agregando espesor y stock
-   - Use forEach para recorrer el inventario y mostrarlo en consola
+/* Decisiones de diseño:
+   - Usé objetos con métodos (calcularArea, descripcion) para representar materiales
+   - Continué con los materiales de ejercicios anteriores agregando espesor y stock
+   - Usé forEach para recorrer el inventario y mostrarlo en consola
    - Reutilice las funciones del ejercicio 3 (calcularArea, calcularAreaTotal, calcularPorcentaje)
-   - Use cantidades limitadas ya que se complicaria mucho con mas datos (lo deje para el siguiente ejercicio)
+   - Usé cantidades limitadas ya que se complicaría mucho con más datos (lo dejé para el siguiente ejercicio)
    - El programa tiene un flujo de 6 pasos con while(true) anidados para validar cada entrada
-   - Agregue manejo de cancelar: si el usuario presiona cancel, pregunto si quiere salir o continuar
-   - La funcion buscarMaterial() acepta numero o nombre para flexibilidad
-   - Fui agregando caracteristicas mientras probaba (desarrollo iterativo)
-   - Use IA para corregir errores y saber que me faltaba agregar
-   - Reutilice las funciones del ejercicio 3 (calcularArea, calcularAreaTotal, calcularPorcentaje) */
+   - Agregué manejo de cancelar: si el usuario presiona cancel, pregunto si quiere salir o continuar
+   - La función buscarMaterial() acepta número o nombre para flexibilidad
+   - Fui agregando características mientras probaba (desarrollo iterativo)
+   - Usé IA para corregir errores y saber qué me faltaba agregar
+   - Reutilicé las funciones del ejercicio 3 (calcularArea, calcularAreaTotal, calcularPorcentaje) */
