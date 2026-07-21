@@ -248,3 +248,16 @@ function main() {
 }
 
 main();
+
+/* Decisiones de diseno:
+   - Use objetos con metodos (calcularArea, descripcion) para representar materiales
+   - Continue con los materiales de ejercicios anteriores agregando espesor y stock
+   - Use forEach para recorrer el inventario y mostrarlo en consola
+   - Reutilice las funciones del ejercicio 3 (calcularArea, calcularAreaTotal, calcularPorcentaje)
+   - Use cantidades limitadas ya que se complicaria mucho con mas datos (lo deje para el siguiente ejercicio)
+   - El programa tiene un flujo de 6 pasos con while(true) anidados para validar cada entrada
+   - Agregue manejo de cancelar: si el usuario presiona cancel, pregunto si quiere salir o continuar
+   - La funcion buscarMaterial() acepta numero o nombre para flexibilidad
+   - Fui agregando caracteristicas mientras probaba (desarrollo iterativo)
+   - Use IA para corregir errores y saber que me faltaba agregar
+   - Reutilice las funciones del ejercicio 3 (calcularArea, calcularAreaTotal, calcularPorcentaje) */

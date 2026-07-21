@@ -81,3 +81,13 @@ switch (true) {
     default:
         console.log("Clasificacion:", "Muy pocas piezas: " + piezasQueCaben);
 }
+
+
+
+/* Decisiones de diseno:
+   - Use un dominio que conozco (placas de melamina) para enfocarme en JS y no complicarme con cosas nuevas
+   - Segui la estructura que dio en clases con archivos separados por ejercicio
+   - Use Number() para convertir los prompt() a numero 
+   - Use if/else para validar si caben piezas y switch para clasificar cantidad
+   - Use console.log() para mostrar resultados en consola y alert() para mostrar resultados en pantalla
+   - Este ejercicio fue la base de sintaxis para todos los siguientes */

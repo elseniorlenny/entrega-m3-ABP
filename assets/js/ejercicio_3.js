@@ -61,3 +61,10 @@ console.log("Material sobrante: " + porcentajeSobrante.toFixed(2) + "%");
 
 /* Mostrar alerta con el resultado */
 alert("Caben " + piezasQueCaben + " piezas en sus placas.\nMaterial utilizado: " + porcentajeUtilizado.toFixed(2) + "%\nMaterial sobrante: " + porcentajeSobrante.toFixed(2) + "%");
+
+/* Decisiones de diseno:
+   - Reimplemente las operaciones del ejercicio 1 como funciones separadas
+   - Cada funcion hace una sola tarea y retorna un resultado (calcularArea, calcularAreaTotal, etc.)
+   - Use IA como guia para revisar si la estructura de las funciones era correcta porque aca ya me costaba 
+   - Las funciones son reutilizables y se componen entre si (composicion)
+   - Mantuve la misma sintaxis y nombres que el ejercicio 1 para consistencia */

@@ -46,3 +46,10 @@ console.log("Materiales con ancho 152 cm (usando funcion):");
 for (let i = 0; i < materiales152.length; i++) {
     console.log("- " + materiales152[i]);
 }
+
+/* Decisiones de diseno:
+   - Use arrays paralelos (nombres, altos, anchos) como pedia el ejercicio
+   - Recorri con for y con while para mostrar ambos metodos
+   - originalmente habia dejado como comentarios el for y while, despues camvie la letra de la variable para que no se repita y los deje activos
+   - La funcion filtrarPorAncho() usa un for clasico con if para filtrar
+   - Tome los mismos 5 materiales del ejercicio-1.html para mantener consistencia */

@@ -780,3 +780,11 @@ function reiniciar() {
 /* ==================== INICIALIZACION ==================== */
 renderMateriales();
 mostrarPaso(1);
+
+/* Decisiones de diseno:
+   - Cree este archivo como un "ejercicio 5" porque el 4 ya estaba muy cargado de cosas
+   - Use IA para que tomara todos los ejercicios anteriores y armara la base de la app visual
+   - Eleji Bootstrap 5.3 para la interfaz responsive y SweetAlert2 porque ya se habia mencionado en clases
+   - Use datos reales del mercado chileno: marcas (Vesto, Masisa, Egger, Trupan, Arauco, etc.) y precios en CLP
+   - Use Canvas para los diagramas de cortey poder descargar diagramas en imagenes
+   - Active GitHub Pages para que se pueda abrir desde un link */
