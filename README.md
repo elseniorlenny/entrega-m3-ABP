@@ -2,7 +2,6 @@
 
 Proyecto de JavaScript para el modulo M3, orientado al calculo y dimensionado de placas de melamina, MDF, terciado, durolac y OSB para construccion y ebanisteria.
 
-
 ---
 
 ## Ejercicios
@@ -215,4 +214,4 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 
 **Autoria:** Fabian Adolfo Ortiz Peña
 
-# entrega-m3-ABP
+
