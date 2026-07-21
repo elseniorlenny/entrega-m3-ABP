@@ -122,11 +122,16 @@ El Dimensionador Pro es una aplicacion web que integra todos los conceptos de lo
 
 **Archivo:** `index.html` + `assets/js/dimensionador-pro.js`
 
-### Como ejecutar
+### Usar en línea
 
-1. Abrir `index.html` en el navegador
-2. Seguir los 5 pasos en la interfaz visual
-3. No necesita consola, todo se muestra en la pantalla
+👉 **[Abrir Dimensionador Pro en línea](https://elseniorlenny.github.io/entrega-m3-ABP/)**
+
+### Como ejecutar localmente
+
+1. Clonar o descargar el repositorio
+2. Abrir `index.html` en el navegador
+3. Seguir los 5 pasos en la interfaz visual
+4. No necesita consola, todo se muestra en la pantalla
 
 ### Flujo de la aplicacion
 
